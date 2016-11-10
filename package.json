@@ -1,7 +1,8 @@
 {
-  "name": "react-npm-module-boilerplate",
+  "name": "react-multi-select",
   "version": "1.0.0",
-  "description": "",
+  "description": "Multi-select input for React JS",
+  "keywords": ["multi-select", "react input", "react multi-select"],
   "main": "webpack.config.js",
   "dependencies": {
     "react": "^15.3.2",

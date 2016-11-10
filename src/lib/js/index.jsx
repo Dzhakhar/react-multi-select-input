@@ -1,14 +1,14 @@
 import React from "react";
+import ReactDOM from "react-dom";
+import CountriesSelect from "./CountriesSelect.jsx";
+import MultiSelect from "./MultiSelect.jsx";
 
-class YourComponent extends React.Component {
-	constructor(props){
-		super(props);
-	}
-
-	render(){
-		return <h1>Hello, {(this.props.name) ? this.props.name : "Dzhakhar"}</h1>
-	}
+if (document.getElementById("react-multi-select-demo###")) {
+    ReactDOM.render(
+        <MultiSelect items={[{name: "Hello", code: "hl"}, {name: "World", code: "wr"}, {name: "Hey", code: "hi"}]}/>,
+        document.getElementById("react-multi-select-demo###")
+    )
 }
 
-
-export default YourComponent;
+exports.CountriesSelect = CountriesSelect;
+export default MultiSelect;

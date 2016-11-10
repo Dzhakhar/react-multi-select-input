@@ -1,0 +1,60 @@
+.multi-select {
+  box-sizing: border-box;
+  position: relative;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .input-wrapper {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 0 5px;
+
+    .multi-input {
+      padding: 10px;
+      display: inline-block;
+      outline: none;
+      border: none;
+      width: 100%;
+    }
+
+    .selected-items {
+      display: inline-block;
+
+      .item {
+        display: inline-block;
+        margin-right: 5px;
+        margin-top: 5px;
+        padding: 5px 10px;
+        color: #333;
+        border-radius: 3px;
+        font-weight: lighter;
+        font-size: 14px;
+        background: darken(#fff, 10%);
+        cursor: pointer;
+        
+        &:hover {
+          background: darken(#fff, 15%);
+        }
+      }
+    }
+  }
+
+  .items {
+    display: block;
+    border: 1px solid #ddd;
+    border-top: none;
+    margin-top: -1px;
+
+    .item {
+      padding: 10px;
+      cursor: pointer;
+      background: #fff;
+
+      &:hover {
+        background: darken(#fff, 10%);
+      }
+    }
+  }
+}
